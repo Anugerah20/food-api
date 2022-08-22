@@ -36,7 +36,7 @@
                          <div class="card-body">
                               <img src="assets/img/Gear.svg" class="img-fluid" alt="wifi">
                          </div>
-                         <p>mudah digunakan</p>
+                         <p class="text-capitalize">mudah digunakan</p>
                     </div>
                </div>
           </div>
