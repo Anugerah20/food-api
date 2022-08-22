@@ -36,7 +36,7 @@
                          <div class="card-body">
                               <img src="assets/img/Gear.svg" class="img-fluid" alt="wifi">
                          </div>
-                         <p>Fast Access Api</p>
+                         <p>mudah digunakan</p>
                     </div>
                </div>
           </div>
