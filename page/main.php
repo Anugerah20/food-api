@@ -46,7 +46,7 @@
                          <div class="card-body">
                               <img src="assets/img/About.svg" class="img-fluid" alt="wifi">
                          </div>
-                         <p>penjelasan lengkap</p>
+                         <p class="text-capitalize">penjelasan lengkap</p>
                     </div>
                </div>
           </div>
