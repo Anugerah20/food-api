@@ -26,7 +26,7 @@
                          <div class="card-body">
                               <img src="assets/img/Wifi.svg" class="img-fluid" alt="wifi">
                          </div>
-                         <p class="text-capitalize">respon cepat</p>
+                         <p class="text-capitalize" style="font-size: 16px;">respon cepat</p>
                     </div>
                </div>
           </div>
