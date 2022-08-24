@@ -26,5 +26,7 @@ curl_setopt_array($curl, array(
 ?>
 
 <div class="container">
-     
+     <div class="row text-center mb-5 mt-5">
+          
+     </div>
 </div>
