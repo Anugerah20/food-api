@@ -103,7 +103,7 @@ if (isset($_POST['search'])) {
                                                                       Carbo : <?php echo(empty($foodsResult->food->nutrients->CHOCDF)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->CHOCDF ?> 
                                                                  </li>
                                                                  <li class="list-group-item">
-                                                                      Fiber : <?php echo(empty($foodsResult->food->nutrients->ENERC_KCAL)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->ENERC_KCAL ?> 
+                                                                      Fiber : <?php echo(empty($foodsResult->food->nutrients->FIBTG)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->FIBTG ?> 
                                                                  </li>
                                                             </ul>
                                                        </div>
