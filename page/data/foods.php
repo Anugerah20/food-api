@@ -110,7 +110,7 @@ if (isset($_POST['search'])) {
                                                             <!-- START: Category -->
                                                             <ul class="list-group mt-4">
                                                                  <li class="list-group-item">
-                                                                      Brand : <?php (empty($foodsResult->food->brand)) ? 'Data tidak tersedia' : $foodsResult->food->brand ?>
+                                                                      Food Contents Label : <?php echo (empty($foodResult->food->foodContentsLabel)) ? 'tidak ada data' : $foodResult->food->foodContentsLabel ?>
                                                                  </li>
                                                                  <li class="list-group-item">
                                                                       Category : <?php echo (empty($foodsResult->food->category)) ? 'Data tidak tersedia' : $foodsResult->food->category ?>
