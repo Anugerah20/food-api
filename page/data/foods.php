@@ -63,6 +63,11 @@ if(isset($_POST['search'])) {
                               <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid rounded">
                          </div>
                          <div class="text-brand"><?php echo $foodsResult->food->label; ?></div>
+                         <div class="card-text">
+                              <div class="badge-section">
+                                   <div class="badge text-bg-danger"><?php echo $foodsResult->food->category ?></div>
+                              </div>
+                         </div>
                     </div>
                </div>
           </div>
