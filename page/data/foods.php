@@ -69,13 +69,13 @@ if (isset($_POST['search'])) {
                                              <div class="badge text-bg-danger"><?php echo $foodsResult->food->categoryLabel ?></div>
                                         </div>
                                         <div class="text-right">
-                                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $foodsResult->food->foodId ?>">
+                                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $foodsResult->food->foodId ?>">
                                                   detail
                                              </button>
                                         </div>
 
                                         <!-- START: Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="exampleModal<?php echo $foodsResult->food->foodId ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                              <div class="modal-dialog">
                                                   <div class="modal-content">
                                                        <div class="modal-header">
