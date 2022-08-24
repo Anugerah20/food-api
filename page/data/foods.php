@@ -90,7 +90,21 @@ if (isset($_POST['search'])) {
                                                             </div>
                                                             <!-- START: List Group -->
                                                             <ul class="list-group">
-                                                                 <li class="list-group-item"></li>
+                                                                 <li class="list-group-item">
+                                                                      ENERGI : <?php echo(empty($foodsResult->food->nutrients->ENERC_KCAL)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->ENERC_KCAL ?> 
+                                                                 </li>
+                                                                 <li class="list-group-item">
+                                                                      Protein : <?php echo(empty($foodsResult->food->nutrients->PROCNT)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->PROCNT ?> 
+                                                                 </li>
+                                                                 <li class="list-group-item">
+                                                                      Fat : <?php echo(empty($foodsResult->food->nutrients->FAT)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->FAT ?> 
+                                                                 </li>
+                                                                 <li class="list-group-item">
+                                                                      Carbo : <?php echo(empty($foodsResult->food->nutrients->CHOCDF)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->CHOCDF ?> 
+                                                                 </li>
+                                                                 <li class="list-group-item">
+                                                                      ENERGI : <?php echo(empty($foodsResult->food->nutrients->ENERC_KCAL)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->ENERC_KCAL ?> 
+                                                                 </li>
                                                             </ul>
                                                        </div>
                                                        <div class="modal-footer">
