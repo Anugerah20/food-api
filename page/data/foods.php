@@ -112,6 +112,7 @@ if (isset($_POST['search'])) {
                                                                  <li class="list-group-item">
                                                                       Category : <?php echo (empty($foodsResult->food->category)) ? 'Data tidak tersedia' : $foodsResult->food->category ?>
                                                                  </li>
+                                                                 <li class="list-group-item"></li>
                                                             </ul>
 
                                                        </div>
