@@ -33,6 +33,7 @@ curl_setopt_array($curl, array(
                     <div class="input-group">
                          <input type="text" name="foods" class="form-control">
                     </div>
+                    <div class="input-group mt-4"></div>
                </form>
           </div>
      </div>
