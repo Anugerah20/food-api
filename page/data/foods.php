@@ -26,17 +26,15 @@ curl_setopt_array($curl, array(
 ?>
 
 <div class="container">
-     <div class="row text-center mb-5 mt-5">
-          <div class="col-md-12 text-capitalize">
+     <div class="row text-center mb-5 mt-5 mt-sm-0">
+          <div class="col-md-8 mx-auto mt-4 text-capitalize">
                <h1>menu foods</h1>
                <form method="POST">
-                    <div class="input-group">
-                         <input type="text" name="foods" class="form-control">
-                    </div>
                     <div class="input-group mt-4">
+                         <input type="text" name="foods" class="form-control">
                          <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                     </div>
-               </form>
-          </div>
+               </div>
+          </form>
      </div>
 </div>
