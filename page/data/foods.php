@@ -1,25 +1,25 @@
-<?php 
-if(isset($_POST['search'])) {
+<?php
+if (isset($_POST['search'])) {
      $foods = $_POST['foods'];
 
      $curl = curl_init();
 
      curl_setopt_array($curl, array(
-       CURLOPT_URL => 'https://api.edamam.com/api/food-database/v2/parser?app_id=827074f0&app_key=d8e6343e9f8fa160fe7f1771f955072e&ingr=' . $foods,
-       CURLOPT_RETURNTRANSFER => true,
-       CURLOPT_ENCODING => '',
-       CURLOPT_MAXREDIRS => 10,
-       CURLOPT_TIMEOUT => 0,
-       CURLOPT_FOLLOWLOCATION => true,
-       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-       CURLOPT_CUSTOMREQUEST => 'GET',
-       CURLOPT_HTTPHEADER => array(
-         'Cookie: route=efbe768325b9fee6a9b60f0ef9f93150'
-       ),
+          CURLOPT_URL => 'https://api.edamam.com/api/food-database/v2/parser?app_id=827074f0&app_key=d8e6343e9f8fa160fe7f1771f955072e&ingr=' . $foods,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+          CURLOPT_HTTPHEADER => array(
+               'Cookie: route=efbe768325b9fee6a9b60f0ef9f93150'
+          ),
      ));
-     
+
      $response = curl_exec($curl);
-     
+
      curl_close($curl);
      $data = json_decode($response);
 }
@@ -42,8 +42,8 @@ if(isset($_POST['search'])) {
 
      <!-- START: NO Search Food -->
      <div class="row">
-     <?php 
-          if(empty($data->text)) {
+          <?php
+          if (empty($data->text)) {
                echo '
                <div class="row">
                   <div class="col-md-8 mx-auto text-center">
@@ -53,52 +53,52 @@ if(isset($_POST['search'])) {
                </div>
                </div>';
           } else {
-     ?>
+          ?>
 
-     <?php foreach($data->hints as $foodsResult) { ?>
-          <div class="col-md-3 mt-5">
-               <div class="card shadow-lg">
-                    <div class="card-body">
-                         <div class="card-title text-center">
-                              <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid rounded">
-                         </div>
-                         <div class="text-brand"><?php echo $foodsResult->food->label; ?></div>
-                         <div class="card-text">
-                              <div class="badge-section">
-                                   <div class="badge text-bg-danger"><?php echo $foodsResult->food->category ?></div>
-                                   <div class="badge text-bg-danger"><?php echo $foodsResult->food->categoryLabel ?></div>
+               <?php foreach ($data->hints as $foodsResult) { ?>
+                    <div class="col-md-3 mt-5">
+                         <div class="card shadow-lg">
+                              <div class="card-body">
+                                   <div class="card-title text-center">
+                                        <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid rounded">
+                                   </div>
+                                   <div class="text-brand"><?php echo $foodsResult->food->label; ?></div>
+                                   <div class="card-text">
+                                        <div class="badge-section">
+                                             <div class="badge text-bg-danger"><?php echo $foodsResult->food->category ?></div>
+                                             <div class="badge text-bg-danger"><?php echo $foodsResult->food->categoryLabel ?></div>
+                                        </div>
+                                        <div class="text-right">
+                                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $foodsResult->food->foodId ?>">
+                                                  detail
+                                             </button>
+                                        </div>
+
+                                        <!-- START: Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                             <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                       <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                       </div>
+                                                       <div class="modal-body">
+                                                            ...
+                                                       </div>
+                                                       <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                   </div>
                               </div>
-                              <div class="text-right">
-                                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $foodsResult->food->foodId ?>">
-                                        detail
-                              </button>
-                              </div>
-
-                              <!-- START: Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
                          </div>
                     </div>
-               </div>
-          </div>
-     <?php 
-     } 
-     }?>
+          <?php
+               }
+          } ?>
      </div>
 </div>
