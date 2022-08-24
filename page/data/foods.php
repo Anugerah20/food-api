@@ -31,7 +31,7 @@ curl_setopt_array($curl, array(
                <h1>menu foods</h1>
                <form method="POST">
                     <div class="input-group mt-4">
-                         <input type="text" name="foods" class="form-control">
+                         <input type="text" name="foods" class="form-control" placeholder="Cari makanan favoritmu" required>
                          <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                     </div>
                </div>
