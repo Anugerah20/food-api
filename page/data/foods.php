@@ -92,7 +92,7 @@ if (isset($_POST['search'])) {
                                                   </div>
                                              </div>
                                         </div>
-
+                                   <!-- END: Modal -->
                                    </div>
                               </div>
                          </div>
