@@ -29,7 +29,9 @@ curl_setopt_array($curl, array(
      <div class="row text-center mb-5 mt-5">
           <div class="col-md-12 text-capitalize">
                <h1>menu foods</h1>
-               <form method="POST"></form>
+               <form method="POST">
+                    <div class="input-group"></div>
+               </form>
           </div>
      </div>
 </div>
