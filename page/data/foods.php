@@ -34,13 +34,14 @@ if(isset($_POST['search'])) {
                <form method="POST">
                     <div class="input-group mt-4">
                          <input type="text" name="foods" class="form-control" placeholder="Cari makanan favoritmu" required>
+                         <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                     </div>
-                    <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                </form>
           </div>
      </div>
 
      <!-- START: NO Search Food -->
+     <div class="row">
      <?php 
           if(empty($data->text)) {
                echo '
@@ -68,4 +69,5 @@ if(isset($_POST['search'])) {
      <?php 
      } 
      }?>
+     </div>
 </div>
