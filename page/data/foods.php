@@ -68,6 +68,9 @@ if(isset($_POST['search'])) {
                                    <div class="badge text-bg-danger"><?php echo $foodsResult->food->category ?></div>
                                    <div class="badge text-bg-danger"><?php echo $foodsResult->food->categoryLabel ?></div>
                               </div>
+                              <div class="text-right">
+
+                              </div>
                          </div>
                     </div>
                </div>
