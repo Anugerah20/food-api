@@ -52,8 +52,6 @@ if(isset($_POST['search'])) {
                </div>
                </div>';
           } else {
-
-          }
      ?>
 
      <?php foreach($data->hints as $foodResult) { ?>
@@ -66,5 +64,7 @@ if(isset($_POST['search'])) {
                     </div>
                </div>
           </div>
-     <?php } ?>
+     <?php 
+     } 
+     }?>
 </div>
