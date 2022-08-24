@@ -59,7 +59,7 @@ if(isset($_POST['search'])) {
                <div class="card shadow-lg">
                     <div class="card-body">
                          <div class="card-title text-center">
-                              <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid">
+                              <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid rounded">
                          </div>
                     </div>
                </div>
