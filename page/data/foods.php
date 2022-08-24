@@ -56,6 +56,14 @@ curl_setopt_array($curl, array(
      ?>
 
      <?php foreach($data->hints as $foodResult) { ?>
-          <div class="col-md-3 mt-5"></div>
+          <div class="col-md-3 mt-5">
+               <div class="card shadow-lg">
+                    <div class="card-body">
+                         <div class="card-title text-center">
+                              
+                         </div>
+                    </div>
+               </div>
+          </div>
      <?php } ?>
 </div>
