@@ -30,7 +30,9 @@ curl_setopt_array($curl, array(
           <div class="col-md-12 text-capitalize">
                <h1>menu foods</h1>
                <form method="POST">
-                    <div class="input-group"></div>
+                    <div class="input-group">
+                         <input type="text" name="foods" class="form-control">
+                    </div>
                </form>
           </div>
      </div>
