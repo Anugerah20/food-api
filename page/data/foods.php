@@ -108,7 +108,7 @@ if (isset($_POST['search'])) {
                                                             </ul>
 
                                                             <!-- START: Category -->
-                                                            <ul class="list-group">
+                                                            <ul class="list-group mt-4">
                                                                  <li class="list-group-item">
                                                                       Category : <?php echo (empty($foodsResult->food->category)) ? 'Data tidak tersedia' : $foodsResult->food->category ?>
                                                                  </li>
