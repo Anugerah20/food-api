@@ -106,6 +106,8 @@ if (isset($_POST['search'])) {
                                                                       Fiber : <?php echo(empty($foodsResult->food->nutrients->FIBTG)) ? 'Data tidak tersedia' : $foodsResult->food->nutrients->FIBTG ?> 
                                                                  </li>
                                                             </ul>
+
+                                                            <!-- START: Category -->
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
