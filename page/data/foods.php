@@ -38,4 +38,6 @@ curl_setopt_array($curl, array(
                </form>
           </div>
      </div>
+
+     <!-- START: NO Search Food -->
 </div>
