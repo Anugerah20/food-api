@@ -88,6 +88,7 @@ if (isset($_POST['search'])) {
                                                             <div class="text-detail">
                                                                  Nutrisi
                                                             </div>
+                                                            <!-- START: List Group -->
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
