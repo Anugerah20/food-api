@@ -40,4 +40,16 @@ curl_setopt_array($curl, array(
      </div>
 
      <!-- START: NO Search Food -->
+     <?php 
+          if(empty($data->text)) {
+               echo '
+               <div class="row">
+                  <div class="col-md-8 mx-auto text-center">
+                    <div class="alert alert-danger" role="alert">
+                    Tidak tersedia
+                  </div>
+               </div>
+               </div>';
+          }
+     ?>
 </div>
