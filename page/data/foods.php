@@ -50,6 +50,12 @@ curl_setopt_array($curl, array(
                   </div>
                </div>
                </div>';
+          } else {
+
           }
      ?>
+
+     <?php foreach($data->hints as $foodResult) { ?>
+          <div class="col-md-3 mt-5"></div>
+     <?php } ?>
 </div>
