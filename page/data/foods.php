@@ -54,7 +54,7 @@ if(isset($_POST['search'])) {
           } else {
      ?>
 
-     <?php foreach($data->hints as $foodResult) { ?>
+     <?php foreach($data->hints as $foodsResult) { ?>
           <div class="col-md-3 mt-5">
                <div class="card shadow-lg">
                     <div class="card-body">
