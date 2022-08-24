@@ -86,7 +86,7 @@ if (isset($_POST['search'])) {
                                                        </div>
                                                        <div class="modal-body">
                                                             <div class="text-detail">
-                                                                 Nutrisi
+                                                                 nutrisi
                                                             </div>
                                                             <!-- START: List Group -->
                                                             <ul class="list-group">
