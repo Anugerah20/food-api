@@ -21,7 +21,7 @@ if(isset($_POST['search'])) {
      $response = curl_exec($curl);
      
      curl_close($curl);
-     $data = json_encode($response);
+     $data = json_decode($response);
 }
 
 ?>
@@ -34,8 +34,8 @@ if(isset($_POST['search'])) {
                <form method="POST">
                     <div class="input-group mt-4">
                          <input type="text" name="foods" class="form-control" placeholder="Cari makanan favoritmu" required>
-                         <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                     </div>
+                    <button type="submit" class="btn btn-primary text-capitalize" name="search">search foods</button>
                </form>
           </div>
      </div>
@@ -61,6 +61,7 @@ if(isset($_POST['search'])) {
                          <div class="card-title text-center">
                               <img src="assets/img/burger.jpg" alt="dummy-food" class="img-fluid rounded">
                          </div>
+                         <div class="text-brand"><?php echo $foodsResult->food->label; ?></div>
                     </div>
                </div>
           </div>
