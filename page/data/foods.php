@@ -25,6 +25,7 @@ curl_setopt_array($curl, array(
 
 ?>
 
+<!-- START: Search Foods -->
 <div class="container">
      <div class="row text-center mb-5 mt-5 mt-sm-0">
           <div class="col-md-8 mx-auto mt-4 text-capitalize">
