@@ -122,7 +122,7 @@ if (isset($_POST['search'])) {
 
                                                        </div>
                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">tutup</button>
+                                                            <button type="button" class="btn btn-secondary text-capitalize" data-bs-dismiss="modal">tutup</button>
                                                        </div>
                                                   </div>
                                              </div>
