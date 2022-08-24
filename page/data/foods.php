@@ -48,7 +48,7 @@ if (isset($_POST['search'])) {
                <div class="row">
                   <div class="col-md-8 mx-auto text-center">
                     <div class="alert alert-danger" role="alert">
-                    Tidak tersedia
+                    Anda belum mencari apapun
                   </div>
                </div>
                </div>';
