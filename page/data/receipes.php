@@ -89,7 +89,7 @@ if (isset($_POST['search'])) {
                                                                       <?php echo$health ?>
                                                                  </span>
                                                             <?php } ?>
-                                                            <div class="text-secondary b-3 mt-3">ingredient</div>
+                                                            <div class="text-secondary b-3 mt-3 text-capitalize">ingredient</div>
                                                             <div class="row">
                                                                  <?php foreach($receipesResult->recipe->ingredients as $ingredient) {?>
                                                                       <div class="col-md-6 mb-3">
