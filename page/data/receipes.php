@@ -67,7 +67,11 @@ $data = json_decode($response);
                               <?php echo $receipesResult->receipe->label ?>
                          </div>
                          <div class="card-text">
-                              <div class="text-right"></div>
+                              <div class="mt-3">
+                                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $foodsResult->food->foodId ?>">
+                                        detail
+                                   </button>
+                              </div>
                          </div>
                     </div>
                </div>
