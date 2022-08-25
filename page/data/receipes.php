@@ -96,7 +96,7 @@ if (isset($_POST['search'])) {
                                                                            <div class="card">
                                                                                 <div class="card-body">
                                                                                      <div class="card-title">
-                                                                                          
+                                                                                          <img src="" alt="">
                                                                                      </div>
                                                                                 </div>
                                                                            </div>
