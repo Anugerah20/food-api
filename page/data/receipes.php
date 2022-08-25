@@ -68,7 +68,7 @@ $data = json_decode($response);
                          </div>
                          <div class="card-text">
                               <div class="mt-3">
-                                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $source ?>">
+                                   <button type="button" class="btn btn-success text-capitalize" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $source ?>">
                                         detail
                                    </button>
                               </div>
