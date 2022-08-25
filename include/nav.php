@@ -13,7 +13,7 @@
           <a class="nav-link" style="font-size: 20px;" href="?page=foods">foods</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="font-size: 20px;" href="">receipe</a>
+          <a class="nav-link" style="font-size: 20px;" href="?page=receipes">receipe</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="font-size: 20px;" href="#">about</a>
