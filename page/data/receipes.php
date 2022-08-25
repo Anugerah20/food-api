@@ -84,14 +84,14 @@ if (isset($_POST['search'])) {
                                                        </div>
                                                        <div class="modal-body">
                                                             <div class="mb-3 mt-3 text-capitalize text-secondary">healt label</div>
-                                                            <?php foreach($receipesResult->recipe->healthLabels as $health) {?>
+                                                            <?php foreach ($receipesResult->recipe->healthLabels as $health) { ?>
                                                                  <span class="badge bg-secondary">
-                                                                      <?php echo$health ?>
+                                                                      <?php echo $health ?>
                                                                  </span>
                                                             <?php } ?>
                                                             <div class="text-secondary b-3 mt-3 text-capitalize">ingredient</div>
                                                             <div class="row">
-                                                                 <?php foreach($receipesResult->recipe->ingredients as $ingredient) {?>
+                                                                 <?php foreach ($receipesResult->recipe->ingredients as $ingredient) { ?>
                                                                       <div class="col-md-6 mb-3">
                                                                            <div class="card">
                                                                                 <div class="card-body">
@@ -119,7 +119,7 @@ if (isset($_POST['search'])) {
                                                                                 </div>
                                                                            </div>
                                                                       </div>
-                                                                      <?php } ?>
+                                                                 <?php } ?>
                                                             </div>
                                                        </div>
                                                        <div class="modal-footer">
