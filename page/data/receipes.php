@@ -58,7 +58,11 @@ $data = json_decode($response);
           ?>
 
           <div class="col-md-3 mt-5">
-               <div class="card card-shadow"></div>
+               <div class="card card-shadow">
+                    <div class="card-body">
+                         
+                    </div>
+               </div>
           </div>
 
           <?php
