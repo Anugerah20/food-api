@@ -57,7 +57,9 @@ $data = json_decode($response);
                $src = str_replace(" ", "", $receipesResult->src);
           ?>
 
-          <div class="col-md-3 mt-5"></div>
+          <div class="col-md-3 mt-5">
+               <div class="card card-shadow"></div>
+          </div>
 
           <?php
                }
