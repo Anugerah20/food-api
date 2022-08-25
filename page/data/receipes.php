@@ -61,7 +61,7 @@ $data = json_decode($response);
                <div class="card card-shadow">
                     <div class="card-body">
                          <div class="card-title text-center">
-                              <img src="" alt="">
+                              <img src="<?php echo $receipesResult->recipe->image ?>" class="img-fluid" alt="image api">
                          </div>
                     </div>
                </div>
