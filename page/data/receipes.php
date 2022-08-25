@@ -54,7 +54,7 @@ $data = json_decode($response);
 
           <?php
           foreach($data->hits as $receipesResult) {
-               $src = str_replace(" ", "", $receipesResult->src);
+               $source = str_replace(" ", "", $receipesResult->source);
           ?>
 
           <div class="col-md-3 mt-5">
