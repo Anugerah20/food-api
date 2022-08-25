@@ -28,6 +28,9 @@ $data = json_decode($response);
      <div class="row mb-5 mt-5">
           <div class="col-md-12 text-center text-capitalize">
                <h1 class="text-capitalize">menu receipe</h1>
+               <form method="POST">
+                    
+               </form>
           </div>
      </div>
 </div>
