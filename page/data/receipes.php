@@ -1,25 +1,24 @@
-<?php 
-if(isset($_POST['search'])) {
+<?php
+if (isset($_POST['search'])) {
      $receipes = $_POST['receipes'];
 
-$curl = curl_init();
+     $curl = curl_init();
 
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.edamam.com/api/recipes/v2?q='. $receipes .'&app_id=32ea5a75&app_key=4d43df82339606836da155153e699b1a&type=public',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'GET',
-));
+     curl_setopt_array($curl, array(
+          CURLOPT_URL => 'https://api.edamam.com/api/recipes/v2?q=' . $receipes . '&app_id=32ea5a75&app_key=4d43df82339606836da155153e699b1a&type=public',
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+     ));
 
-$response = curl_exec($curl);
+     $response = curl_exec($curl);
 
-curl_close($curl);
-$data = json_decode($response);
-
+     curl_close($curl);
+     $data = json_decode($response);
 }
 
 ?>
@@ -39,9 +38,9 @@ $data = json_decode($response);
      </div>
 
      <div class="row">
-          <?php 
-               if (empty($data->hits)) {
-                    echo '
+          <?php
+          if (empty($data->hits)) {
+               echo '
                     <div class="row">
                        <div class="col-md-8 mx-auto text-center">
                          <div class="alert alert-danger" role="alert">
@@ -49,53 +48,53 @@ $data = json_decode($response);
                        </div>
                     </div>
                     </div>';
-               } else {
+          } else {
           ?>
 
-          <?php
-          foreach($data->hits as $receipesResult) {
-               $source = str_replace(" ", "", $receipesResult->recipe->source);
-          ?>
+               <?php
+               foreach ($data->hits as $receipesResult) {
+                    $source = str_replace(" ", "", $receipesResult->recipe->source);
+               ?>
 
-          <div class="col-md-3 mt-5">
-               <div class="card card-shadow">
-                    <div class="card-body">
-                         <div class="card-title text-center">
-                              <img src="<?php echo $receipesResult->recipe->image ?>" class="img-fluid rounded-2" alt="image api">
-                         </div>
-                         <div class="text-left">
-                              <?php echo $receipesResult->recipe->label ?>
-                         </div>
-                         <div class="card-text">
-                              <div class="mt-3">
-                                   <button type="button" class="btn btn-success text-capitalize" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $source ?>">
-                                        detail
-                                   </button>
-                              </div>
+                    <div class="col-md-3 mt-5">
+                         <div class="card card-shadow">
+                              <div class="card-body">
+                                   <div class="card-title text-center">
+                                        <img src="<?php echo $receipesResult->recipe->image ?>" class="img-fluid rounded-2" alt="image api">
+                                   </div>
+                                   <div class="text-left">
+                                        <?php echo $receipesResult->recipe->label ?>
+                                   </div>
+                                   <div class="card-text">
+                                        <div class="mt-3">
+                                             <button type="button" class="btn btn-success text-capitalize" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $source ?>">
+                                                  detail
+                                             </button>
+                                        </div>
 
-                              <!-- START: Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                         <div class="modal-dialog">
-                         <div class="modal-content">
-                              <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                              ...
-                              </div>
-                              <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                         </div>
-                         </div>
-                         </div>
+                                        <!-- START: Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                             <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                       <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                       </div>
+                                                       <div class="modal-body">
+                                                            ...
+                                                       </div>
+                                                       <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
 
+                                   </div>
+                              </div>
                          </div>
                     </div>
-               </div>
-          </div>
 
           <?php
                }
