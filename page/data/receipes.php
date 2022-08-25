@@ -90,6 +90,9 @@ if (isset($_POST['search'])) {
                                                                  </span>
                                                             <?php } ?>
                                                             <div class="text-secondary b-3 mt-3">ingredient</div>
+                                                            <div class="row">
+                                                                 
+                                                            </div>
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
