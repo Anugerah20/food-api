@@ -98,6 +98,10 @@ if (isset($_POST['search'])) {
                                                                                      <div class="card-title">
                                                                                           <img src="<?php echo $ingredient->image ?>" alt="image receipe" class="img-fluid rounded-2">
                                                                                      </div>
+                                                                                     <!-- START: Detail -->
+                                                                                     <ul class="list-group">
+                                                                                          
+                                                                                     </ul>
                                                                                 </div>
                                                                            </div>
                                                                       </div>
