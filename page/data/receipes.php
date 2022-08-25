@@ -30,7 +30,7 @@ $data = json_decode($response);
                <h1 class="text-capitalize">menu receipe</h1>
                <form method="POST">
                     <div class="input-group">
-                         <input type="text" name="receipes">
+                         <input type="text" name="receipes" class="form-control">
                     </div>
                </form>
           </div>
