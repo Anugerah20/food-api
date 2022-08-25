@@ -24,3 +24,4 @@ $data = json_decode($response);
 ?>
 
 <!-- START: Container -->
+<div class="container"></div>
