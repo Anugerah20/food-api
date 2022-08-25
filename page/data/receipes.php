@@ -101,16 +101,19 @@ if (isset($_POST['search'])) {
                                                                                      <!-- START: Detail -->
                                                                                      <ul class="list-group">
                                                                                           <li class="list-group-item">
-                                                                                          Quantity : <?php echo $ingredient->quantity ?>
+                                                                                               Quantity : <?php echo $ingredient->quantity ?>
                                                                                           </li>
                                                                                           <li class="list-group-item">
-                                                                                          Measure : <?php echo $ingredient->measure ?>
+                                                                                               Measure : <?php echo $ingredient->measure ?>
                                                                                           </li>
                                                                                           <li class="list-group-item">
-                                                                                          Food : <?php echo $ingredient->food ?>
+                                                                                               Food : <?php echo $ingredient->food ?>
                                                                                           </li>
                                                                                           <li class="list-group-item">
                                                                                                Weight : <?php echo $ingredient->weight ?>
+                                                                                          </li>
+                                                                                          <li class="list-group-item">
+                                                                                               
                                                                                           </li>
                                                                                      </ul>
                                                                                 </div>
