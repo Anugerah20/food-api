@@ -103,6 +103,9 @@ if (isset($_POST['search'])) {
                                                                                           <li class="list-group-item">
                                                                                           Quantity : <?php echo $ingredient->quantity ?>
                                                                                           </li>
+                                                                                          <li class="list-group-item">
+                                                                                               
+                                                                                          </li>
                                                                                      </ul>
                                                                                 </div>
                                                                            </div>
