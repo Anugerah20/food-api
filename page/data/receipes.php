@@ -50,11 +50,16 @@ $data = json_decode($response);
                     </div>
                     </div>';
                } else {
+          ?>
 
+          <?php
+          foreach($data->hits as $receipesResult) {
+               $src = str_replace(" ", "", $receipesResult->src);
           ?>
 
           <?php
                }
+          }
           ?>
 
      </div>
