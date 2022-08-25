@@ -110,7 +110,7 @@ if (isset($_POST['search'])) {
                                                                                           Food : <?php echo $ingredient->food ?>
                                                                                           </li>
                                                                                           <li class="list-group-item">
-                                                                                               
+                                                                                               Weight : <?php echo $ingredient->weight ?>
                                                                                           </li>
                                                                                      </ul>
                                                                                 </div>
