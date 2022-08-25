@@ -40,7 +40,7 @@ $data = json_decode($response);
 
      <div class="row">
           <?php 
-               if (empty($data->text)) {
+               if (empty($data->hits)) {
                     echo '
                     <div class="row">
                        <div class="col-md-8 mx-auto text-center">
