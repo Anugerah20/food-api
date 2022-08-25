@@ -64,7 +64,7 @@ $data = json_decode($response);
                               <img src="<?php echo $receipesResult->recipe->image ?>" class="img-fluid" alt="image api">
                          </div>
                          <div class="text-left">
-                              <?php echo $receipesResult->receipe->label ?>
+                              <?php echo $receipesResult->recipe->label ?>
                          </div>
                          <div class="card-text">
                               <div class="mt-3">
