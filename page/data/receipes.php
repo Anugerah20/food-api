@@ -1,7 +1,6 @@
 <?php 
 if(isset($_POST['search'])) {
      $receipes = $_POST['receipes'];
-}
 
 $curl = curl_init();
 
@@ -20,6 +19,8 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 $data = json_decode($response);
+
+}
 
 ?>
 
