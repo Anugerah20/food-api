@@ -85,7 +85,9 @@ if (isset($_POST['search'])) {
                                                        <div class="modal-body">
                                                             <div class="mb-3 mt-3 text-capitalize text-secondary">healt label</div>
                                                             <?php foreach($receipesResult->recipe->healthLabels as $health) {?>
-                                                                 
+                                                                 <span class="badge bg-secondary">
+                                                                      <?php echo$health ?>
+                                                                 </span>
                                                             <?php } ?>
                                                        </div>
                                                        <div class="modal-footer">
