@@ -61,7 +61,7 @@ $data = json_decode($response);
                <div class="card card-shadow">
                     <div class="card-body">
                          <div class="card-title text-center">
-                              
+                              <img src="" alt="">
                          </div>
                     </div>
                </div>
