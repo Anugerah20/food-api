@@ -93,7 +93,9 @@ if (isset($_POST['search'])) {
                                                             <div class="row">
                                                                  <?php foreach($receipesResult->recipe->ingredients as $ingredient) {?>
                                                                       <div class="col-md-6 mb-3">
-                                                                           
+                                                                           <div class="card">
+                                                                                
+                                                                           </div>
                                                                       </div>
                                                             </div>
                                                             <?php } ?>
