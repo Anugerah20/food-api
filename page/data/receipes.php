@@ -29,7 +29,7 @@ $data = json_decode($response);
           <div class="col-md-12 text-center text-capitalize">
                <h1 class="text-capitalize">menu receipe</h1>
                <form method="POST">
-                    
+                    <div class="input-group"></div>
                </form>
           </div>
      </div>
