@@ -66,7 +66,9 @@ $data = json_decode($response);
                          <div class="text-left">
                               <?php echo $receipesResult->receipe->label ?>
                          </div>
-                         <div class="card-text"></div>
+                         <div class="card-text">
+                              <div class="text-right"></div>
+                         </div>
                     </div>
                </div>
           </div>
