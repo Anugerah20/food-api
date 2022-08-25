@@ -83,7 +83,7 @@ if (isset($_POST['search'])) {
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                        </div>
                                                        <div class="modal-body">
-                                                            <div class="mb-3 mt-3 text-capitalize">healt label</div>
+                                                            <div class="mb-3 mt-3 text-capitalize text-secondary">healt label</div>
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
