@@ -104,7 +104,7 @@ if (isset($_POST['search'])) {
                                                                                           Quantity : <?php echo $ingredient->quantity ?>
                                                                                           </li>
                                                                                           <li class="list-group-item">
-                                                                                               
+                                                                                          Measure : <?php echo $ingredient->measure ?>
                                                                                           </li>
                                                                                      </ul>
                                                                                 </div>
