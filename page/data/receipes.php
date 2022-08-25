@@ -30,8 +30,8 @@ $data = json_decode($response);
                <h1 class="text-capitalize mb-4">menu receipe</h1>
                <form method="POST">
                     <div class="input-group">
-                         <input type="text" name="receipes" class="form-control">
-                         <button type="submit" class="btn btn-primary text-capitalize" name="search" require>search receipe</button>
+                         <input type="text" name="receipes" class="form-control" require>
+                         <button type="submit" class="btn btn-primary text-capitalize" name="search">search receipe</button>
                     </div>
                </form>
           </div>
