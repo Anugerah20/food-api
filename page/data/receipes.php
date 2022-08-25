@@ -96,7 +96,7 @@ if (isset($_POST['search'])) {
                                                                            <div class="card">
                                                                                 <div class="card-body">
                                                                                      <div class="card-title">
-                                                                                          <img src="<?php echo $ingredient->image ?>" alt="image receipe">
+                                                                                          <img src="<?php echo $ingredient->image ?>" alt="image receipe" class="img-fluid">
                                                                                      </div>
                                                                                 </div>
                                                                            </div>
