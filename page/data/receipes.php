@@ -89,6 +89,9 @@ if (isset($_POST['search'])) {
                                                                       <?php echo$health ?>
                                                                  </span>
                                                             <?php } ?>
+                                                            <div class="text-secondary b-3 mt-3">
+                                                                 
+                                                            </div>
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
