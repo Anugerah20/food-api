@@ -101,7 +101,7 @@ if (isset($_POST['search'])) {
                                                                                      <!-- START: Detail -->
                                                                                      <ul class="list-group">
                                                                                           <li class="list-group-item">
-                                                                                               
+                                                                                          Quantity : <?php echo $ingredient->quantity ?>
                                                                                           </li>
                                                                                      </ul>
                                                                                 </div>
