@@ -31,7 +31,7 @@ $data = json_decode($response);
                <form method="POST">
                     <div class="input-group">
                          <input type="text" name="receipes" class="form-control">
-                         <button type="submit" class="btn btn-primary text-capitalize" name="search">search receipe</button>
+                         <button type="submit" class="btn btn-primary text-capitalize" name="search" require>search receipe</button>
                     </div>
                </form>
           </div>
