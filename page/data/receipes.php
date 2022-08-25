@@ -26,7 +26,7 @@ $data = json_decode($response);
 <!-- START: Container -->
 <div class="container">
      <div class="row mb-5 mt-5">
-          <div class="col-md-12 text-center text-capitalize">
+          <div class="col-md-8 mx-auto text-center text-capitalize">
                <h1 class="text-capitalize">menu receipe</h1>
                <form method="POST">
                     <div class="input-group">
