@@ -91,8 +91,9 @@ if (isset($_POST['search'])) {
                                                             <?php } ?>
                                                             <div class="text-secondary b-3 mt-3">ingredient</div>
                                                             <div class="row">
-                                                                 
+                                                                 <?php foreach($receipesResult->recipe->ingredients as $ingredient) {?>
                                                             </div>
+                                                            <?php } ?>
                                                        </div>
                                                        <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
