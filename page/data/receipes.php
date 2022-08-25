@@ -26,6 +26,8 @@ $data = json_decode($response);
 <!-- START: Container -->
 <div class="container">
      <div class="row mb-5 mt-5">
-          <div class="col-md-12 text-center text-capitalize"></div>
+          <div class="col-md-12 text-center text-capitalize">
+               <h1>menu receipe</h1>
+          </div>
      </div>
 </div>
