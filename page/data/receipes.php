@@ -31,7 +31,7 @@ $data = json_decode($response);
                <h1 class="text-capitalize mb-4">menu receipe</h1>
                <form method="POST">
                     <div class="input-group">
-                         <input type="text" name="receipes" class="form-control" required>
+                         <input type="text" name="receipes" class="form-control" required placeholder="Cari resep kesukaanmu">
                          <button type="submit" class="btn btn-primary text-capitalize" name="search">search receipe</button>
                     </div>
                </form>
