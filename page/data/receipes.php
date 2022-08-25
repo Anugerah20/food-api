@@ -72,6 +72,9 @@ $data = json_decode($response);
                                         detail
                                    </button>
                               </div>
+
+                              <!-- START: Modal -->
+
                          </div>
                     </div>
                </div>
