@@ -100,7 +100,9 @@ if (isset($_POST['search'])) {
                                                                                      </div>
                                                                                      <!-- START: Detail -->
                                                                                      <ul class="list-group">
-                                                                                          
+                                                                                          <li class="list-group-item">
+                                                                                               
+                                                                                          </li>
                                                                                      </ul>
                                                                                 </div>
                                                                            </div>
