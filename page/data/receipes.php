@@ -109,6 +109,9 @@ if (isset($_POST['search'])) {
                                                                                           <li class="list-group-item">
                                                                                           Food : <?php echo $ingredient->food ?>
                                                                                           </li>
+                                                                                          <li class="list-group-item">
+                                                                                               
+                                                                                          </li>
                                                                                      </ul>
                                                                                 </div>
                                                                            </div>
