@@ -18,4 +18,5 @@
                <textarea name="komentar" cols="10" rows="5" require placeholder="You comment" class="form-control"></textarea>
           </div>
      </div>
+     <button type="submit" class="btn btn-dark">kirim</button>
 </div>
