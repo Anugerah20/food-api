@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <?php if (isset($_GET['home'])) { ?>
-          <title>Food Api</title>
-     <?php } else if (isset($_GET['foods'])) { ?>
+     <?php if (isset($_GET['foods'])) { ?>
           <title>Foods</title>
      <?php } else if(isset($_GET['receipes'])) { ?>
           <title>Receipes</title>
