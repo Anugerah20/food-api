@@ -19,7 +19,7 @@
           <a class="nav-link" style="font-size: 20px;" href="?page=about">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="font-size: 20px;" href="#">contact</a>
+          <a class="nav-link" style="font-size: 20px;" href="?page=contact">contact</a>
         </li>
       </ul>
     </div>
