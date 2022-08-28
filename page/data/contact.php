@@ -5,7 +5,7 @@
      <!-- START: Contact -->
      <div class="row mt-5">
           <div class="col-md-4 mx-auto">
-               <input type="text" name="nama" class="form-control" require placeholder="your name">
+               <input type="text" name="nama" class="form-control" require placeholder="Your name">
           </div>
      </div>
      <div class="row mt-5">
