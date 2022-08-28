@@ -3,6 +3,7 @@
           About
      </h1>
      <div class="text-center mt-5">
-          <p>FoodApi adalah website yang menyediakan layanan untuk mencari makanan dan resep kesukaan kamu.</p>
+          <p style="font-size: 20px;">FoodApi adalah website yang menyediakan layanan untuk mencari<br/>
+          makanan dan resep kesukaan kamu.</p>
      </div>
 </div>
