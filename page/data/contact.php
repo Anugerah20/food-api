@@ -15,7 +15,7 @@
      </div>
      <div class="row mt-5">
           <div class="col-md-4 mx-auto">
-               <textarea name="komentar" cols="10" rows="5" class="form-control"></textarea>
+               <textarea name="komentar" cols="10" rows="5" require placeholder="You comment" class="form-control"></textarea>
           </div>
      </div>
 </div>
