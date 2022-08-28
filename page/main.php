@@ -6,8 +6,8 @@
                     <div class="card-body">
                          <div class="card-title">
                               <h1 class="text-uppercase text-center" style="font-size: 4.5rem; font-weight: 800;">
-                                   cari resep dan
-                                   makanan kamu!
+                                   cari <span style="color: #5f54d1;">resep</span> dan
+                                   <span style="color: #5f54d1;">makanan</span> kamu!
                               </h1>
                          </div>
                     </div>
