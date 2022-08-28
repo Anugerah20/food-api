@@ -30,7 +30,7 @@ if (isset($_POST['search'])) {
 <div class="container">
      <div class="row text-center mb-5 mt-5 mt-sm-0">
           <div class="col-md-8 mx-auto mt-4 text-capitalize">
-               <h1>menu foods</h1>
+               <h1 style="font-weight: 700; color: #5f54d1;">menu foods</h1>
                <form method="POST">
                     <div class="input-group mt-4">
                          <input type="text" name="foods" class="form-control" placeholder="Cari makanan favoritmu" required>
