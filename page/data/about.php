@@ -2,7 +2,7 @@
      <h1 class="text-center">
           About
      </h1>
-     <div>
+     <div class="text-center mt-5">
           <p>FoodApi adalah website yang menyediakan layanan untuk mencari makanan dan resep kesukaan kamu.</p>
      </div>
 </div>
