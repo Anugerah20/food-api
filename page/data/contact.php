@@ -10,7 +10,7 @@
      </div>
      <div class="row mt-5">
           <div class="col-md-4 mx-auto">
-               <input type="text" name="email" class="form-control" require placeholder="your email">
+               <input type="text" name="email" class="form-control" require placeholder="Your email">
           </div>
      </div>
      <div class="row mt-5">
