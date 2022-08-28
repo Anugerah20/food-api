@@ -21,7 +21,7 @@
      <div>
           <div class="row mt-3">
                <div class="col-md-4 mx-auto">
-                    <button type="submit" class="btn btn-dark">kirim</button>
+                    <button type="submit" name="send" class="btn btn-dark">kirim</button>
                </div>
           </div>
      </div>
