@@ -3,6 +3,6 @@
           About
      </h1>
      <div>
-          
+          <p>FoodApi adalah website yang menyediakan layanan untuk mencari makanan dan resep kesukaan kamu.</p>
      </div>
 </div>
