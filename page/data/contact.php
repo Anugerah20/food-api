@@ -5,7 +5,17 @@
      <!-- START: Contact -->
      <div class="row mt-5">
           <div class="col-md-4 mx-auto">
-               <input type="text" class="form-control" require placeholder="your name">
+               <input type="text" name="nama" class="form-control" require placeholder="your name">
+          </div>
+     </div>
+     <div class="row mt-5">
+          <div class="col-md-4 mx-auto">
+               <input type="text" name="email" class="form-control" require placeholder="your email">
+          </div>
+     </div>
+     <div class="row mt-5">
+          <div class="col-md-4 mx-auto">
+               <textarea name="komentar" cols="10" rows="5" class="form-control"></textarea>
           </div>
      </div>
 </div>
