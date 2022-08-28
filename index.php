@@ -15,6 +15,9 @@ switch($page) {
      case 'receipes';
           include 'page/data/receipes.php';
           break;
+     case 'about';
+          include 'page/data/about.php';
+          break;
      default:
           include 'page/main.php';
           break;
