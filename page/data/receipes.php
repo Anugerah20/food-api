@@ -27,7 +27,7 @@ if (isset($_POST['search'])) {
 <div class="container">
      <div class="row mb-5 mt-5">
           <div class="col-md-8 mx-auto text-center text-capitalize">
-               <h1 class="text-capitalize mb-4">menu receipe</h1>
+               <h1 class="text-capitalize mb-4" style="font-weight: 700; color: #5f54d1;">menu receipe</h1>
                <form method="POST">
                     <div class="input-group">
                          <input type="text" name="receipes" class="form-control" required placeholder="Cari resep kesukaanmu">
